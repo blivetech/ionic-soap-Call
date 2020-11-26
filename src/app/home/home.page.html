@@ -1,20 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Indus Inteview
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <div class="heading">
+    <h1>Login</h1>
+    <p>Please sign in to continue</p>
+</div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+  
+    <ion-item class="round-input">
+    
+      <ion-input [(ngModel)]="username" type="email" name="email" placeholder="Email Address"></ion-input>
+    </ion-item>
+  
+    <ion-item class="round-input">
+      <ion-input [(ngModel)]="password" type="password" name="password" placeholder="Password"></ion-input>
+    </ion-item>
+  
+  
+    <ion-button  (click)="soapCall()" shape="round" expand="full" class="btn-yellow">Login</ion-button>
+  
 </ion-content>

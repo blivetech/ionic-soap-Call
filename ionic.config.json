@@ -1,5 +1,7 @@
 {
   "name": "Indus",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
